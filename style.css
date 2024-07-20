@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ba2248;
+}
+.container{
+    margin-top: 2rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    /* padding: 3rem 6rem 3rem 6rem; */
+    display: flex;
+    flex-direction: row;
+}
+.main .p1{
+    width: 20rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5dce7;
+}
+.main .p2{
+    width: 20rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f08bb7;
+}
+.p1 #player,.p2 #player{
+    padding: 4rem 2rem 1rem 6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.p1 #pscore1, .p2 #pscore2{
+    color: rgb(236, 15, 15);
+    font-size: 3rem;
+    font-weight:500;
+    padding: 0 2rem 1rem 8.5rem;
+}
+.p1 button, .p2 button{
+    background-color: rgb(236, 15, 15);
+    width: 9rem;
+    height: 4.5rem;
+    margin: 9rem 2rem 0 5rem;
+    color: aliceblue;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+.p1 #currentScore1,.p2 #currentScore2{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.new-game-btn,.roll-dice-btn,.hold-btn {
+    color: #767273;
+    background-color: #f0eeed;
+    width: 12rem;
+    height: 3rem;
+    margin: 2rem 0 0 0;
+    font-style: normal;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    border: none;
+}
+.hold-btn{
+    width: 8rem;
+}
+.dice{
+    display: flex;
+    justify-content: center;
+
+}
+.dice img{
+    width: 4rem;
+    height: 4rem;
+    margin:1.5rem 0 0 1rem;
+}
+.hidden{
+    display: none;
+}
+
+@media (max-width:607px) {
+    .main .p1, .main .p2{
+        width: 10rem;
+    }
+    .p1 #player,.p2 #player{
+        padding: 2rem 1rem 1rem 3rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .p1 #pscore1, .p2 #pscore2{
+        font-size: 2rem;
+        font-weight:500;
+        padding: 0 1rem 1rem 4.5rem;
+    }
+    .p1 button, .p2 button{
+        width: 6rem;
+        height: 3rem;
+        margin: 5rem 1rem 0 3rem;
+        color: aliceblue;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+    }
+    .p1 #currentScore1,.p2 #currentScore2{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
